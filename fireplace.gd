@@ -8,5 +8,3 @@ func _on_button_pressed() -> void:
 	print("you warmed yourself up")
 	stats.time - 5
 	stats.check_status()
-
-	
