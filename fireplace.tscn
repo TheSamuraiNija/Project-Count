@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dj40nj7an8ge"]
+
+[ext_resource type="Script" uid="uid://dl356j621cont" path="res://fireplace.gd" id="1_0dsgr"]
+[ext_resource type="Texture2D" uid="uid://suifoywstrjl" path="res://Fireplace.png" id="2_3f88f"]
+
+[node name="Fireplace" type="Node2D" unique_id=214948609]
+script = ExtResource("1_0dsgr")
+
+[node name="Button" type="Button" parent="." unique_id=1064372156]
+offset_left = 518.0
+offset_top = 183.0
+offset_right = 626.0
+offset_bottom = 387.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=415641492]
+position = Vector2(571, 286)
+texture = ExtResource("2_3f88f")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

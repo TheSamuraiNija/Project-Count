@@ -5,6 +5,7 @@ func _ready():
 	start()
 	
 func start():
+	stats.time = 250
 	$Timer.wait_time = stats.time
 	print($Timer.wait_time)
 	pass
@@ -43,6 +44,5 @@ func status_update():
 func _on_check_status_pressed() -> void:
 	health_update()
 	stats.check_status()
-
-
+	
 	

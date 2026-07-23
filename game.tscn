@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://0uxeq0bymoo8"]
 
 [ext_resource type="Script" uid="uid://bad658t7pcibt" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://dj40nj7an8ge" path="res://fireplace.tscn" id="2_e2o6t"]
 
 [node name="Game" type="Node2D" unique_id=1056982260]
 script = ExtResource("1_80nbo")
+
+[node name="Fireplace" parent="." unique_id=214948609 instance=ExtResource("2_e2o6t")]
+position = Vector2(-500, 0)
 
 [node name="Hunger Test" type="Button" parent="." unique_id=1646631640]
 offset_left = 499.0

@@ -9,7 +9,9 @@ var sleep: int = 100
 var hunger_reduction: float = 5
 var cold_reduction: float = 5
 var sleep_reduction: float = 5
-var time: float = 250
+var time:float = 250
+#other stuff
+var update:int = 0
 
 func hunger_decay():
 	check_status()
@@ -46,6 +48,7 @@ func sleep_decay():
 	check_status()
 
 func check_status():
+	update = 1
 	if health <= 0:
 		game_over()
 #very important stuff for the rest of the game
@@ -57,6 +60,7 @@ func initalize():
 	hunger = 100
 	cold = 100
 	sleep = 100
+	time = 250
 
 func action_decay():
 	#add check for eating 
