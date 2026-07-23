@@ -34,7 +34,10 @@ func cold_decay():
 func sleep_decay():
 	check_status()
 	if sleep == 0:
-		sanity -= 5
+		if sanity >-45:
+			sanity -= 5
+			if sanity < 0:
+				print ("you are going insane")
 	if sleep != 0:
 		sleep -= sleep_reduction
 		print(sleep)
@@ -45,17 +48,15 @@ func sleep_decay():
 func check_status():
 	if health <= 0:
 		game_over()
-	if sanity < 0:
-		print ("you are going insane")
 #very important stuff for the rest of the game
 func game_over():
 	get_tree().change_scene_to_file("res://Menu.tscn")
 func initalize():
-	var health: int = 100
-	var sanity: int = 45
-	var hunger: int = 100
-	var cold: int = 100
-	var sleep: int = 100
+	health = 100
+	sanity = 45
+	hunger = 100
+	cold = 100
+	sleep = 100
 
 func action_decay():
 	#add check for eating 
