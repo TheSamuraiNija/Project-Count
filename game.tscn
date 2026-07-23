@@ -12,15 +12,28 @@ offset_right = 601.0
 offset_bottom = 277.0
 text = "Hunger Test"
 
-[node name="Label" type="Label" parent="." unique_id=527375853]
+[node name="Check Status" type="Button" parent="." unique_id=688044523]
+offset_left = 499.0
+offset_top = 246.0
+offset_right = 507.0
+offset_bottom = 254.0
+
+[node name="HungerUI" type="Label" parent="." unique_id=527375853]
 offset_left = 412.0
 offset_top = 130.0
 offset_right = 662.0
 offset_bottom = 206.0
+
+[node name="HealthUI" type="Label" parent="." unique_id=645514610]
+offset_left = 382.0
+offset_top = 24.0
+offset_right = 684.0
+offset_bottom = 92.0
 
 [node name="Timer" type="Timer" parent="." unique_id=1582104717]
 wait_time = 300.0
 one_shot = true
 
 [connection signal="pressed" from="Hunger Test" to="." method="_on_hunger_test_pressed"]
+[connection signal="pressed" from="Check Status" to="." method="_on_check_status_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
