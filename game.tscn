@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://0uxeq0bymoo8"]
+
+[ext_resource type="Script" uid="uid://bad658t7pcibt" path="res://game.gd" id="1_80nbo"]
+
+[node name="Game" type="Node2D" unique_id=1056982260]
+script = ExtResource("1_80nbo")
+
+[node name="Hunger Test" type="Button" parent="." unique_id=1646631640]
+offset_left = 499.0
+offset_top = 246.0
+offset_right = 601.0
+offset_bottom = 277.0
+text = "Hunger Test"
+
+[node name="Label" type="Label" parent="." unique_id=527375853]
+offset_left = 412.0
+offset_top = 130.0
+offset_right = 662.0
+offset_bottom = 206.0
+
+[connection signal="pressed" from="Hunger Test" to="." method="_on_hunger_test_pressed"]

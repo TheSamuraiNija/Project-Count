@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cqjx3e1nsg4je"]
+
+[ext_resource type="AudioStream" uid="uid://ds12mw1afcl3b" path="res://SFX/menutap.mp3" id="2_nlbx0"]
+
+[node name="Node2D" type="Node2D" unique_id=1130706298]
+
+[node name="MenuTap" type="AudioStreamPlayer2D" parent="." unique_id=499982941]
+stream = ExtResource("2_nlbx0")

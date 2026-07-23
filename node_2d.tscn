@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cj48fy7bgua23"]
+
+[ext_resource type="Script" uid="uid://cj6ipfk2v1fw5" path="res://button.gd" id="1_wtcfe"]
+[ext_resource type="AudioStream" uid="uid://ds12mw1afcl3b" path="res://SFX/menutap.mp3" id="2_0e48y"]
+
+[node name="Menu" type="Node2D" unique_id=1115962091]
+
+[node name="Button" type="Button" parent="." unique_id=485872379]
+offset_left = 224.0
+offset_top = 243.0
+offset_right = 946.0
+offset_bottom = 465.0
+text = "Play"
+script = ExtResource("1_wtcfe")
+
+[node name="MenuTap" type="AudioStreamPlayer2D" parent="Button" unique_id=72749741]
+stream = ExtResource("2_0e48y")
+volume_db = 0.16
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

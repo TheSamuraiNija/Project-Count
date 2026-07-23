@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bhi7y0xf6qnag"]
+
+[ext_resource type="AudioStream" uid="uid://ds12mw1afcl3b" path="res://SFX/menutap.mp3" id="1_gd4s1"]
+[ext_resource type="Script" uid="uid://840no8f3cipk" path="res://SFX/audio_player.gd" id="1_m6osg"]
+
+[node name="AudioPlayer" type="Node2D" unique_id=458748655]
+script = ExtResource("1_m6osg")
+
+[node name="MenuTap" type="AudioStreamPlayer" parent="." unique_id=1796520749]
+stream = ExtResource("1_gd4s1")
