@@ -7,7 +7,8 @@ var cold: int = 100
 var sleep: int = 100
 #Mechanics
 var hunger_reduction: float = 5
-var cold_reduction: float = 2.5
+var cold_reduction: float = 5
+var sleep_reduction: float = 5
 var time: float = 250
 
 func hunger_decay():
@@ -30,11 +31,34 @@ func cold_decay():
 		if cold <= 0:
 			print ("freeze")
 	check_status()
+func sleep_decay():
+	check_status()
+	if sleep == 0:
+		sanity -= 5
+	if sleep != 0:
+		sleep -= sleep_reduction
+		print(sleep)
+		if sleep <= 0:
+			print ("exhuasted")
+	check_status()
 
 func check_status():
 	if health <= 0:
 		game_over()
-	
+	if sanity < 0:
+		print ("you are going insane")
+#very important stuff for the rest of the game
 func game_over():
 	get_tree().change_scene_to_file("res://Menu.tscn")
-	
+func initalize():
+	var health: int = 100
+	var sanity: int = 45
+	var hunger: int = 100
+	var cold: int = 100
+	var sleep: int = 100
+
+func action_decay():
+	#add check for eating 
+	hunger_decay()
+	#add check for fireplace
+	cold_decay()
