@@ -18,4 +18,9 @@ offset_top = 130.0
 offset_right = 662.0
 offset_bottom = 206.0
 
+[node name="Timer" type="Timer" parent="." unique_id=1582104717]
+wait_time = 300.0
+one_shot = true
+
 [connection signal="pressed" from="Hunger Test" to="." method="_on_hunger_test_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
