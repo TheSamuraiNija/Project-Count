@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://c4smyy8i3371t"]
+
+[ext_resource type="Script" uid="uid://du0wlric3cbu7" path="res://rooms/bedroom.gd" id="1_ahsja"]
+
+[node name="bedroom" type="Node2D" unique_id=1177166435]
+script = ExtResource("1_ahsja")
+
+[node name="fireplaceButton" type="Button" parent="." unique_id=1538964739]
+offset_left = 205.0
+offset_top = 247.0
+offset_right = 284.0
+offset_bottom = 278.0
+text = "Fireplace"
+
+[node name="bedButton" type="Button" parent="." unique_id=881104245]
+offset_left = 763.0
+offset_top = 444.0
+offset_right = 801.0
+offset_bottom = 475.0
+text = "Bed"
+
+[node name="leftButton" type="Button" parent="." unique_id=1825241100]
+offset_left = 18.0
+offset_top = 271.0
+offset_right = 57.0
+offset_bottom = 302.0
+text = "Left"
+
+[node name="youButton" type="Button" parent="." unique_id=1827828028]
+offset_left = 905.0
+offset_top = 51.0
+offset_right = 984.0
+offset_bottom = 82.0
+text = "you"
+
+[node name="windowButton" type="Button" parent="." unique_id=319120806]
+offset_left = 596.0
+offset_top = 243.0
+offset_right = 667.0
+offset_bottom = 274.0
+text = "Window"
+
+[connection signal="pressed" from="fireplaceButton" to="." method="_on_fireplaceButton_pressed"]
+[connection signal="button_down" from="bedButton" to="." method="_on_bedButton_button_down"]
+[connection signal="button_up" from="bedButton" to="." method="_on_bedButton_button_up"]
+[connection signal="pressed" from="leftButton" to="." method="_on_leftButton_pressed"]
+[connection signal="pressed" from="youButton" to="." method="_on_youButton_pressed"]
+[connection signal="pressed" from="windowButton" to="." method="_on_windowButton_pressed"]

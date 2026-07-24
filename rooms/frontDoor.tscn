@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://e2ci2rolvqpb"]
+
+[ext_resource type="Script" uid="uid://dsyx0jm4w0rb7" path="res://rooms/frontDoor.gd" id="1_fmmni"]
+
+[node name="frontDoor" type="Node2D" unique_id=123719160]
+script = ExtResource("1_fmmni")
+
+[node name="toolsButton" type="Button" parent="." unique_id=743878861]
+offset_left = 526.0
+offset_top = 414.0
+offset_right = 575.0
+offset_bottom = 445.0
+text = "Tools"
+
+[node name="baitButton" type="Button" parent="." unique_id=1283784450]
+offset_left = 300.0
+offset_top = 413.0
+offset_right = 339.0
+offset_bottom = 444.0
+text = "Bait"
+metadata/_edit_use_anchors_ = true
+
+[node name="upButton" type="Button" parent="." unique_id=1139688001]
+offset_left = 789.0
+offset_top = 153.0
+offset_right = 828.0
+offset_bottom = 184.0
+text = "Up
+"
+
+[node name="leftButton" type="Button" parent="." unique_id=1903613241]
+offset_left = 18.0
+offset_top = 271.0
+offset_right = 26.0
+offset_bottom = 279.0
+text = "Left"
+
+[node name="rightButton" type="Button" parent="." unique_id=1569287986]
+offset_left = 1067.0
+offset_top = 297.0
+offset_right = 1075.0
+offset_bottom = 305.0
+text = "Right"
+
+[node name="trashButton" type="Button" parent="." unique_id=2102442477]
+offset_left = 900.0
+offset_top = 521.0
+offset_right = 952.0
+offset_bottom = 552.0
+text = "Trash"
+
+[node name="youButton" type="Button" parent="." unique_id=799534096]
+offset_left = 905.0
+offset_top = 51.0
+offset_right = 984.0
+offset_bottom = 82.0
+text = "you"
+
+[node name="windowButton" type="Button" parent="." unique_id=193253582]
+offset_left = 498.0
+offset_top = 190.0
+offset_right = 547.0
+offset_bottom = 221.0
+text = "Window"
+
+[node name="windowButton2" type="Button" parent="." unique_id=378313491]
+offset_left = 221.0
+offset_top = 196.0
+offset_right = 292.0
+offset_bottom = 227.0
+text = "Window"
+
+[connection signal="pressed" from="toolsButton" to="." method="_on_toolsButton_pressed"]
+[connection signal="pressed" from="baitButton" to="." method="_on_baitButton_pressed"]
+[connection signal="pressed" from="upButton" to="." method="_on_upButton_pressed"]
+[connection signal="pressed" from="leftButton" to="." method="_on_leftButton_pressed"]
+[connection signal="pressed" from="rightButton" to="." method="_on_rightButton_pressed"]
+[connection signal="pressed" from="trashButton" to="." method="_on_trashButton_pressed"]
+[connection signal="pressed" from="youButton" to="." method="_on_youButton_pressed"]
+[connection signal="pressed" from="windowButton" to="." method="_on_windowButton_pressed"]
+[connection signal="pressed" from="windowButton2" to="." method="_on_windowButton_2_pressed"]
