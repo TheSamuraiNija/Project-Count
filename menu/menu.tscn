@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://6r6bqgku5ajl"]
+
+[ext_resource type="Script" uid="uid://w8t0e5k0vech" path="res://menu/menu.gd" id="1_j0t7f"]
+
+[node name="menu" type="Node2D" unique_id=620639683]
+script = ExtResource("1_j0t7f")
+
+[node name="background" type="TextureRect" parent="." unique_id=550863124]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="startButton" type="Button" parent="." unique_id=1543517204]
+offset_left = 513.0
+offset_top = 284.0
+offset_right = 559.0
+offset_bottom = 315.0
+text = "Start"
+
+[node name="creditsButton" type="Button" parent="." unique_id=1510167097]
+offset_left = 504.0
+offset_top = 334.0
+offset_right = 567.0
+offset_bottom = 365.0
+text = "Credits
+"
+
+[connection signal="pressed" from="startButton" to="." method="_on_startButton_pressed"]
+[connection signal="pressed" from="creditsButton" to="." method="_on_creditsButton_pressed"]

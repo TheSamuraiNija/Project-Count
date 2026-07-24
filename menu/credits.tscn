@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dd7w0ro6pc7to"]
+
+[ext_resource type="Script" uid="uid://eyu45xq8cmjr" path="res://menu/credits.gd" id="1_wp78b"]
+
+[node name="credits" type="Node2D" unique_id=1753274682]
+script = ExtResource("1_wp78b")
+
+[node name="backButton" type="Button" parent="." unique_id=946860605]
+offset_left = 841.0
+offset_top = 489.0
+offset_right = 886.0
+offset_bottom = 520.0
+text = "Back"
+
+[node name="creditsText" type="Label" parent="." unique_id=373469549]
+offset_left = 198.99994
+offset_top = 209.0
+offset_right = 480.99994
+offset_bottom = 258.0
+scale = Vector2(2.0149457, 2.0731075)
+text = "Art by Aslehvs and SamtpfoteByte 
+Coding by Dire4r and SamtpfoteByte"
+
+[connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]

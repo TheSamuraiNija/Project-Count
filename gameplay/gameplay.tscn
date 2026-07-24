@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://cibme0ecu3bk7"]
+
+[ext_resource type="Script" uid="uid://cppph7qy8ipi8" path="res://gameplay/gameplay.gd" id="1_nyvx4"]
+
+[node name="gameplay" type="Node2D" unique_id=780203542]
+script = ExtResource("1_nyvx4")
+
+[node name="roomContainer" type="Node2D" parent="." unique_id=1650217090]
+
+[node name="ui" type="CanvasLayer" parent="." unique_id=1058122166]
+
+[node name="statsPanel" type="Control" parent="ui" unique_id=65815745]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 58.0
+offset_top = 77.0
+offset_right = 98.0
+offset_bottom = 117.0
+
+[node name="hungerLabel" type="Label" parent="ui/statsPanel" unique_id=1446346861]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 2.0
+offset_right = 110.0
+offset_bottom = 25.0
+text = "Hunger"
+
+[node name="hungerBar" type="ProgressBar" parent="ui/statsPanel/hungerLabel" unique_id=762178936]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 16.0
+offset_bottom = 54.0
+
+[node name="warmthLabel" type="Label" parent="ui/statsPanel" unique_id=483826997]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 68.0
+offset_right = 110.0
+offset_bottom = 91.0
+text = "Warmth"
+
+[node name="warmthBar" type="ProgressBar" parent="ui/statsPanel/warmthLabel" unique_id=1854745257]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 16.0
+offset_bottom = 54.0
+
+[node name="energyLabel" type="Label" parent="ui/statsPanel" unique_id=2137463074]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 132.0
+offset_right = 105.0
+offset_bottom = 155.0
+text = "Energy"
+
+[node name="energyBar" type="ProgressBar" parent="ui/statsPanel/energyLabel" unique_id=1949123140]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 27.0
+offset_right = 16.0
+offset_bottom = 54.0
+
+[node name="dayTimerLabel" type="Label" parent="ui/statsPanel" unique_id=2140997195]
+layout_mode = 0
+offset_left = 464.0
+offset_top = -48.0
+offset_right = 536.0
+offset_bottom = -25.0
+text = "timertest"
+
+[node name="inventoryLabel" type="Label" parent="ui/statsPanel" unique_id=1324886211]
+layout_mode = 0
+offset_left = 141.0
+offset_top = 504.0
+offset_right = 214.0
+offset_bottom = 527.0
+text = "inventest"
+
+[node name="cookingReadyLabel" type="Label" parent="ui/statsPanel" unique_id=1528969927]
+layout_mode = 0
+offset_left = 173.0
+offset_top = 182.0
+offset_right = 240.0
+offset_bottom = 205.0
+text = "cooktest"
+
+[node name="craftingReadyLabel" type="Label" parent="ui/statsPanel" unique_id=1663531399]
+layout_mode = 0
+offset_left = 487.0
+offset_top = 178.0
+offset_right = 553.0
+offset_bottom = 201.0
+text = "crafttest"

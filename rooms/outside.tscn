@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bftb0ssm0gdrv"]
+
+[ext_resource type="Script" uid="uid://bnbtt055c0xko" path="res://rooms/outside.gd" id="1_4ur12"]
+
+[node name="outside" type="Node2D" unique_id=1460510379]
+script = ExtResource("1_4ur12")
+
+[node name="cropsButton" type="Button" parent="." unique_id=51247233]
+offset_left = 272.0
+offset_top = 243.0
+offset_right = 325.0
+offset_bottom = 274.0
+text = "Crops"
+metadata/_edit_use_anchors_ = true
+
+[node name="treesButton" type="Button" parent="." unique_id=117724095]
+offset_left = 694.0
+offset_top = 241.0
+offset_right = 747.0
+offset_bottom = 272.0
+text = "Trees"
+
+[node name="downButton" type="Button" parent="." unique_id=2123163933]
+offset_left = 762.0
+offset_top = 495.0
+offset_right = 815.0
+offset_bottom = 526.0
+text = "Down"
+
+[node name="youButton" type="Button" parent="." unique_id=9888578]
+offset_left = 905.0
+offset_top = 51.0
+offset_right = 984.0
+offset_bottom = 82.0
+text = "you"
+
+[connection signal="pressed" from="cropsButton" to="." method="_on_cropsButton_pressed"]
+[connection signal="pressed" from="treesButton" to="." method="_on_treesButton_pressed"]
+[connection signal="pressed" from="downButton" to="." method="_on_downButton_pressed"]
+[connection signal="pressed" from="youButton" to="." method="_on_youButton_pressed"]
