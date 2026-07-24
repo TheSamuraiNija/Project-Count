@@ -4,7 +4,7 @@ extends Node2D
 # EXPORTS (BALANCING)
 # ---------------------------------------------------------
 
-@export var current_room: String = "Bedroom"
+@export var current_room: String = "bedroom"
 @export var ENERGY_DRAIN := 5.0
 @export var INSIDE_COLD_RATE := 2.0
 @export var OUTSIDE_COLD_RATE := 6.0
@@ -305,7 +305,7 @@ func update_ui():
 	else:
 		inventory_label.text = "Inventory: None"
 
-	if current_room == "Kitchen":
+	if current_room == "kitchen":
 		cooking_ready_label.text = "Cooking Ready: " + ("Yes" if cooking_ready else "No")
 		crafting_ready_label.text = "Crafting Ready: " + ("Yes" if crafting_ready else "No")
 	else:
