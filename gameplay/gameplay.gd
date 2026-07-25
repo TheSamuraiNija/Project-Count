@@ -141,7 +141,7 @@ func _process(delta):
 		if fireplace_timer <= 0:
 			fireplace_lit = false
 
-	if fireplace_lit and current_room == "Bedroom":
+	if fireplace_lit and current_room == "bedroom":
 		warmth += FIRE_WARMTH_RATE * delta
 
 	if cooking:

@@ -19,6 +19,6 @@ offset_right = 480.99994
 offset_bottom = 258.0
 scale = Vector2(2.0149457, 2.0731075)
 text = "Art by Aslehvs and SamtpfoteByte 
-Coding by Dire4r and SamtpfoteByte"
+Coding by Dire4R and SamtpfoteByte"
 
 [connection signal="pressed" from="backButton" to="." method="_on_backButton_pressed"]
