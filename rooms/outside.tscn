@@ -34,7 +34,15 @@ offset_right = 984.0
 offset_bottom = 82.0
 text = "you"
 
+[node name="trashButton" type="Button" parent="." unique_id=1139029070]
+offset_left = 900.0
+offset_top = 521.0
+offset_right = 952.0
+offset_bottom = 552.0
+text = "Trash"
+
 [connection signal="pressed" from="cropsButton" to="." method="_on_cropsButton_pressed"]
 [connection signal="pressed" from="treesButton" to="." method="_on_treesButton_pressed"]
 [connection signal="pressed" from="downButton" to="." method="_on_downButton_pressed"]
 [connection signal="pressed" from="youButton" to="." method="_on_youButton_pressed"]
+[connection signal="pressed" from="trashButton" to="." method="_on_trashButton_pressed"]

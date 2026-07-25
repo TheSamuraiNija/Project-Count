@@ -40,9 +40,17 @@ offset_right = 667.0
 offset_bottom = 274.0
 text = "Window"
 
+[node name="trashButton" type="Button" parent="." unique_id=1678619960]
+offset_left = 900.0
+offset_top = 521.0
+offset_right = 952.0
+offset_bottom = 552.0
+text = "Trash"
+
 [connection signal="pressed" from="fireplaceButton" to="." method="_on_fireplaceButton_pressed"]
 [connection signal="button_down" from="bedButton" to="." method="_on_bedButton_button_down"]
 [connection signal="button_up" from="bedButton" to="." method="_on_bedButton_button_up"]
 [connection signal="pressed" from="leftButton" to="." method="_on_leftButton_pressed"]
 [connection signal="pressed" from="youButton" to="." method="_on_youButton_pressed"]
 [connection signal="pressed" from="windowButton" to="." method="_on_windowButton_pressed"]
+[connection signal="pressed" from="trashButton" to="." method="_on_trashButton_pressed"]
