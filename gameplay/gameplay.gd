@@ -5,16 +5,16 @@ extends Node2D
 # ---------------------------------------------------------
 
 @export var current_room: String = "bedroom"
-@export var ENERGY_DRAIN := 5.0
+@export var ENERGY_DRAIN := 3.0
 @export var INSIDE_COLD_RATE := 2.0
 @export var OUTSIDE_COLD_RATE := 6.0
 @export var SLEEP_RATE := 20.0
 @export var FIREPLACE_BURN_TIME := 10.0
 @export var FIRE_WARMTH_RATE := 15.0
-@export var COOK_TIME := 5.0
+@export var COOK_TIME := 3.0
 @export var CRAFT_TIME := 6.0
 @export var BIGCOUNTER_TIME := 120.0
-@export var HUNGER_DRAIN := 3.0
+@export var HUNGER_DRAIN := 2.0
 
 # ---------------------------------------------------------
 # NODES
