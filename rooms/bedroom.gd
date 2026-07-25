@@ -28,3 +28,7 @@ func _on_youButton_pressed() -> void:
 func _on_windowButton_pressed() -> void:
 	if gameplay != null:
 		gameplay.reinforce_window_named("bedroom_window")
+
+func _on_trashButton_pressed() -> void:
+	if gameplay != null:
+		gameplay.trash_item()

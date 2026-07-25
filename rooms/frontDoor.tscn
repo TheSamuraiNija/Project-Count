@@ -42,13 +42,6 @@ offset_right = 1075.0
 offset_bottom = 305.0
 text = "Right"
 
-[node name="trashButton" type="Button" parent="." unique_id=2102442477]
-offset_left = 900.0
-offset_top = 521.0
-offset_right = 952.0
-offset_bottom = 552.0
-text = "Trash"
-
 [node name="youButton" type="Button" parent="." unique_id=799534096]
 offset_left = 905.0
 offset_top = 51.0
@@ -70,12 +63,19 @@ offset_right = 292.0
 offset_bottom = 227.0
 text = "Window"
 
+[node name="trashButton" type="Button" parent="." unique_id=2102442477]
+offset_left = 900.0
+offset_top = 521.0
+offset_right = 952.0
+offset_bottom = 552.0
+text = "Trash"
+
 [connection signal="pressed" from="toolsButton" to="." method="_on_toolsButton_pressed"]
 [connection signal="pressed" from="baitButton" to="." method="_on_baitButton_pressed"]
 [connection signal="pressed" from="upButton" to="." method="_on_upButton_pressed"]
 [connection signal="pressed" from="leftButton" to="." method="_on_leftButton_pressed"]
 [connection signal="pressed" from="rightButton" to="." method="_on_rightButton_pressed"]
-[connection signal="pressed" from="trashButton" to="." method="_on_trashButton_pressed"]
 [connection signal="pressed" from="youButton" to="." method="_on_youButton_pressed"]
 [connection signal="pressed" from="windowButton" to="." method="_on_windowButton_pressed"]
 [connection signal="pressed" from="windowButton2" to="." method="_on_windowButton_2_pressed"]
+[connection signal="pressed" from="trashButton" to="." method="_on_trashButton_pressed"]

@@ -35,3 +35,7 @@ func _on_windowButton_pressed() -> void:
 func _on_windowButton_2_pressed() -> void:
 	if gameplay != null:
 		gameplay.reinforce_window_named("kitchen_window_2")
+
+func _on_trashButton_pressed() -> void:
+	if gameplay != null:
+		gameplay.trash_item()

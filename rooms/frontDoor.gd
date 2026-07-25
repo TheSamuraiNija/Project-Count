@@ -22,10 +22,6 @@ func _on_rightButton_pressed():
 	if gameplay != null:
 		gameplay.load_room("bedroom")
 
-func _on_trashButton_pressed() -> void:
-	if gameplay != null:
-		gameplay.trash_item()
-
 func _on_youButton_pressed() -> void:
 	if gameplay != null:
 		gameplay.eat_food()
@@ -37,3 +33,7 @@ func _on_windowButton_pressed() -> void:
 func _on_windowButton_2_pressed() -> void:
 	if gameplay != null:
 		gameplay.reinforce_window_named("front_window_2")
+
+func _on_trashButton_pressed() -> void:
+	if gameplay != null:
+		gameplay.trash_item()

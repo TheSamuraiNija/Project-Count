@@ -17,3 +17,7 @@ func _on_downButton_pressed():
 func _on_youButton_pressed() -> void:
 	if gameplay != null:
 		gameplay.eat_food()
+
+func _on_trashButton_pressed() -> void:
+	if gameplay != null:
+		gameplay.trash_item()
