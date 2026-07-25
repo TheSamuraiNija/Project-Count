@@ -4,6 +4,9 @@
 
 [node name="gameplay" type="Node2D" unique_id=780203542]
 script = ExtResource("1_nyvx4")
+ENERGY_DRAIN = 3.0
+COOK_TIME = 3.0
+HUNGER_DRAIN = 2.0
 
 [node name="roomContainer" type="Node2D" parent="." unique_id=1650217090]
 

@@ -245,7 +245,7 @@ func add_hunger(amount: float):
 func eat_food():
 	if holding_cooked_food:
 		holding_cooked_food = false
-		add_hunger(30.0)
+		add_hunger(50.0)
 
 func start_crafting():
 	if holding_wood and not crafting and not crafting_ready:
