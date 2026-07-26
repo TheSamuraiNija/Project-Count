@@ -1,45 +1,59 @@
 [gd_scene format=3 uid="uid://bftb0ssm0gdrv"]
 
 [ext_resource type="Script" uid="uid://bnbtt055c0xko" path="res://rooms/outside.gd" id="1_4ur12"]
+[ext_resource type="Texture2D" uid="uid://cmetdaqniw112" path="res://art/outside.png" id="2_t8i3q"]
+[ext_resource type="Texture2D" uid="uid://cgks3gelspjc8" path="res://art/you.png" id="3_darih"]
+[ext_resource type="Texture2D" uid="uid://dh8vb13xxx5aq" path="res://art/trash.png" id="4_arlrm"]
 
 [node name="outside" type="Node2D" unique_id=1460510379]
 script = ExtResource("1_4ur12")
 
-[node name="cropsButton" type="Button" parent="." unique_id=51247233]
-offset_left = 272.0
-offset_top = 243.0
-offset_right = 325.0
-offset_bottom = 274.0
-text = "Crops"
+[node name="Outside" type="Sprite2D" parent="." unique_id=307331495]
+position = Vector2(576, 324)
+scale = Vector2(0.64, 0.54)
+texture = ExtResource("2_t8i3q")
+
+[node name="You" type="Sprite2D" parent="." unique_id=72592512]
+position = Vector2(576, 324)
+scale = Vector2(0.64, 0.53999996)
+texture = ExtResource("3_darih")
+
+[node name="Trash" type="Sprite2D" parent="." unique_id=1381865420]
+position = Vector2(576, 324)
+scale = Vector2(0.64000005, 0.53999996)
+texture = ExtResource("4_arlrm")
+
+[node name="cropsButton" type="TextureButton" parent="." unique_id=1758944298]
+offset_left = 56.0
+offset_top = 178.0
+offset_right = 109.0
+offset_bottom = 209.0
+scale = Vector2(6.561596, 12.500694)
 metadata/_edit_use_anchors_ = true
 
-[node name="treesButton" type="Button" parent="." unique_id=117724095]
-offset_left = 694.0
-offset_top = 241.0
-offset_right = 747.0
-offset_bottom = 272.0
-text = "Trees"
+[node name="treesButton" type="TextureButton" parent="." unique_id=1647157447]
+offset_left = 487.0
+offset_top = 14.0
+offset_right = 979.0
+offset_bottom = 461.0
 
-[node name="downButton" type="Button" parent="." unique_id=2123163933]
-offset_left = 762.0
-offset_top = 495.0
-offset_right = 815.0
-offset_bottom = 526.0
-text = "Down"
+[node name="downButton" type="TextureButton" parent="." unique_id=951335729]
+offset_left = -32.0
+offset_top = 511.0
+offset_right = 1167.0
+offset_bottom = 657.0
 
-[node name="youButton" type="Button" parent="." unique_id=9888578]
-offset_left = 905.0
-offset_top = 51.0
-offset_right = 984.0
-offset_bottom = 82.0
-text = "you"
+[node name="youButton" type="TextureButton" parent="." unique_id=1264666508]
+offset_left = 986.0
+offset_top = 20.0
+offset_right = 1114.0
+offset_bottom = 171.0
 
-[node name="trashButton" type="Button" parent="." unique_id=1139029070]
-offset_left = 900.0
-offset_top = 521.0
-offset_right = 952.0
-offset_bottom = 552.0
-text = "Trash"
+[node name="trashButton" type="TextureButton" parent="." unique_id=328348352]
+offset_left = 894.0
+offset_top = 458.0
+offset_right = 1067.0
+offset_bottom = 632.0
 
 [connection signal="pressed" from="cropsButton" to="." method="_on_cropsButton_pressed"]
 [connection signal="pressed" from="treesButton" to="." method="_on_treesButton_pressed"]

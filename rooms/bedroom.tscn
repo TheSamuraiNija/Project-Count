@@ -1,51 +1,63 @@
 [gd_scene format=3 uid="uid://c4smyy8i3371t"]
 
 [ext_resource type="Script" uid="uid://du0wlric3cbu7" path="res://rooms/bedroom.gd" id="1_ahsja"]
+[ext_resource type="Texture2D" uid="uid://dexpqf7n07auv" path="res://art/bedroom.png" id="2_c15lx"]
+[ext_resource type="Texture2D" uid="uid://cgks3gelspjc8" path="res://art/you.png" id="3_78uxc"]
+[ext_resource type="Texture2D" uid="uid://dh8vb13xxx5aq" path="res://art/trash.png" id="4_cns8q"]
 
 [node name="bedroom" type="Node2D" unique_id=1177166435]
 script = ExtResource("1_ahsja")
 
-[node name="fireplaceButton" type="Button" parent="." unique_id=1538964739]
-offset_left = 205.0
-offset_top = 247.0
-offset_right = 284.0
-offset_bottom = 278.0
-text = "Fireplace"
+[node name="Bedroom" type="Sprite2D" parent="." unique_id=1660220504]
+position = Vector2(576, 324)
+scale = Vector2(0.64, 0.54)
+texture = ExtResource("2_c15lx")
 
-[node name="bedButton" type="Button" parent="." unique_id=881104245]
-offset_left = 763.0
-offset_top = 444.0
-offset_right = 801.0
-offset_bottom = 475.0
-text = "Bed"
+[node name="You" type="Sprite2D" parent="." unique_id=1748085979]
+position = Vector2(576, 324)
+scale = Vector2(0.64, 0.53999996)
+texture = ExtResource("3_78uxc")
 
-[node name="leftButton" type="Button" parent="." unique_id=1825241100]
-offset_left = 18.0
-offset_top = 271.0
-offset_right = 57.0
-offset_bottom = 302.0
-text = "Left"
+[node name="Trash" type="Sprite2D" parent="." unique_id=1675883707]
+position = Vector2(576, 324)
+scale = Vector2(0.64000005, 0.53999996)
+texture = ExtResource("4_cns8q")
 
-[node name="youButton" type="Button" parent="." unique_id=1827828028]
-offset_left = 905.0
-offset_top = 51.0
-offset_right = 984.0
-offset_bottom = 82.0
-text = "you"
+[node name="fireplaceButton" type="TextureButton" parent="." unique_id=214495860]
+offset_left = 60.0
+offset_top = 161.0
+offset_right = 517.0
+offset_bottom = 495.0
 
-[node name="windowButton" type="Button" parent="." unique_id=319120806]
-offset_left = 596.0
-offset_top = 243.0
-offset_right = 667.0
-offset_bottom = 274.0
-text = "Window"
+[node name="bedButton" type="TextureButton" parent="." unique_id=1481240867]
+offset_left = 558.0
+offset_top = 290.0
+offset_right = 1045.0
+offset_bottom = 553.0
 
-[node name="trashButton" type="Button" parent="." unique_id=1678619960]
-offset_left = 900.0
-offset_top = 521.0
-offset_right = 952.0
-offset_bottom = 552.0
-text = "Trash"
+[node name="leftButton" type="TextureButton" parent="." unique_id=977465785]
+offset_left = -3.0
+offset_top = -10.0
+offset_right = 58.0
+offset_bottom = 674.0
+
+[node name="youButton" type="TextureButton" parent="." unique_id=1907282095]
+offset_left = 983.0
+offset_top = 20.0
+offset_right = 1115.0
+offset_bottom = 162.0
+
+[node name="windowButton" type="TextureButton" parent="." unique_id=1736729127]
+offset_left = 702.0
+offset_top = 105.0
+offset_right = 985.0
+offset_bottom = 290.0
+
+[node name="trashButton" type="TextureButton" parent="." unique_id=1918913632]
+offset_left = 896.0
+offset_top = 461.0
+offset_right = 1073.0
+offset_bottom = 637.0
 
 [connection signal="pressed" from="fireplaceButton" to="." method="_on_fireplaceButton_pressed"]
 [connection signal="button_down" from="bedButton" to="." method="_on_bedButton_button_down"]

@@ -1,28 +1,46 @@
 [gd_scene format=3 uid="uid://6r6bqgku5ajl"]
 
 [ext_resource type="Script" uid="uid://w8t0e5k0vech" path="res://menu/menu.gd" id="1_j0t7f"]
+[ext_resource type="Texture2D" uid="uid://cywpmycc5ubkj" path="res://art/menu.png" id="2_6nwqt"]
+[ext_resource type="AudioStream" uid="uid://byem7l2bngb48" path="res://Sfx/Walen - Dark Heart (freetouse.com).mp3" id="2_g18jx"]
+[ext_resource type="Texture2D" uid="uid://rajxrcyq8bun" path="res://art/howtoplay.png" id="4_pbjm4"]
 
 [node name="menu" type="Node2D" unique_id=620639683]
 script = ExtResource("1_j0t7f")
 
-[node name="background" type="TextureRect" parent="." unique_id=550863124]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Menu" type="Sprite2D" parent="." unique_id=806369934]
+position = Vector2(576.5, 325.00003)
+scale = Vector2(0.6394444, 0.5399999)
+texture = ExtResource("2_6nwqt")
 
-[node name="startButton" type="Button" parent="." unique_id=1543517204]
-offset_left = 513.0
-offset_top = 284.0
-offset_right = 559.0
-offset_bottom = 315.0
-text = "Start"
+[node name="startButton" type="TextureButton" parent="." unique_id=464141611]
+offset_left = 742.0
+offset_top = 253.0
+offset_right = 788.0
+offset_bottom = 284.0
+scale = Vector2(4.4552484, 2.1787546)
 
-[node name="creditsButton" type="Button" parent="." unique_id=1510167097]
-offset_left = 504.0
-offset_top = 334.0
-offset_right = 567.0
-offset_bottom = 365.0
-text = "Credits
-"
+[node name="creditsButton" type="TextureButton" parent="." unique_id=102975900]
+offset_left = 720.0
+offset_top = 374.0
+offset_right = 783.0
+offset_bottom = 405.0
+scale = Vector2(3.9391663, 2.1490104)
+
+[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=418403531]
+stream = ExtResource("2_g18jx")
+volume_db = -17.16
+parameters/looping = true
+
+[node name="Howtoplay" type="Sprite2D" parent="." unique_id=1979705650]
+position = Vector2(577, 370)
+scale = Vector2(0.5281818, 0.46042)
+texture = ExtResource("4_pbjm4")
+
+[node name="howtobutton" type="TextureButton" parent="." unique_id=1557682553]
+offset_right = 1171.0
+offset_bottom = 673.0
 
 [connection signal="pressed" from="startButton" to="." method="_on_startButton_pressed"]
 [connection signal="pressed" from="creditsButton" to="." method="_on_creditsButton_pressed"]
+[connection signal="pressed" from="howtobutton" to="." method="_on_howtobutton_pressed"]

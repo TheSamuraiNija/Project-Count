@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byem7l2bngb48"
+path="res://.godot/imported/Walen - Dark Heart (freetouse.com).mp3-f06234696adbebd11db77f8e10529015.mp3str"
+
+[deps]
+
+source_file="res://Sfx/Walen - Dark Heart (freetouse.com).mp3"
+dest_files=["res://.godot/imported/Walen - Dark Heart (freetouse.com).mp3-f06234696adbebd11db77f8e10529015.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

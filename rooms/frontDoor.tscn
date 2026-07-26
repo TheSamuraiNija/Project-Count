@@ -1,74 +1,84 @@
 [gd_scene format=3 uid="uid://e2ci2rolvqpb"]
 
 [ext_resource type="Script" uid="uid://dsyx0jm4w0rb7" path="res://rooms/frontDoor.gd" id="1_fmmni"]
+[ext_resource type="Texture2D" uid="uid://4feyhb6xkmry" path="res://art/front door.jpg" id="2_evl1v"]
+[ext_resource type="Texture2D" uid="uid://cgks3gelspjc8" path="res://art/you.png" id="3_aihi0"]
+[ext_resource type="Texture2D" uid="uid://dh8vb13xxx5aq" path="res://art/trash.png" id="4_qc4e8"]
 
 [node name="frontDoor" type="Node2D" unique_id=123719160]
 script = ExtResource("1_fmmni")
 
-[node name="toolsButton" type="Button" parent="." unique_id=743878861]
-offset_left = 526.0
-offset_top = 414.0
-offset_right = 575.0
-offset_bottom = 445.0
-text = "Tools"
+[node name="FrontDoor" type="Sprite2D" parent="." unique_id=1146618051]
+position = Vector2(576, 324)
+scale = Vector2(0.64, 0.54)
+texture = ExtResource("2_evl1v")
 
-[node name="baitButton" type="Button" parent="." unique_id=1283784450]
-offset_left = 300.0
-offset_top = 413.0
-offset_right = 339.0
-offset_bottom = 444.0
-text = "Bait"
+[node name="You" type="Sprite2D" parent="." unique_id=429828518]
+position = Vector2(576, 324)
+scale = Vector2(0.64, 0.53999996)
+texture = ExtResource("3_aihi0")
+
+[node name="Trash" type="Sprite2D" parent="." unique_id=2092974763]
+position = Vector2(576, 324)
+scale = Vector2(0.64000005, 0.53999996)
+texture = ExtResource("4_qc4e8")
+
+[node name="toolsButton" type="TextureButton" parent="." unique_id=1545183563]
+offset_left = 138.00002
+offset_top = 303.00003
+offset_right = 187.00002
+offset_bottom = 334.00003
+scale = Vector2(5.155582, 4.991464)
+
+[node name="baitButton" type="TextureButton" parent="." unique_id=1067513885]
+offset_left = 447.0
+offset_top = 342.00003
+offset_right = 486.0
+offset_bottom = 373.00003
+scale = Vector2(5.761924, 3.8796382)
 metadata/_edit_use_anchors_ = true
 
-[node name="upButton" type="Button" parent="." unique_id=1139688001]
-offset_left = 789.0
-offset_top = 153.0
-offset_right = 828.0
-offset_bottom = 184.0
-text = "Up
-"
+[node name="upButton" type="TextureButton" parent="." unique_id=528871808]
+offset_left = 684.0
+offset_top = 54.0
+offset_right = 967.0
+offset_bottom = 410.0
 
-[node name="leftButton" type="Button" parent="." unique_id=1903613241]
-offset_left = 18.0
-offset_top = 271.0
-offset_right = 26.0
-offset_bottom = 279.0
-text = "Left"
+[node name="leftButton" type="TextureButton" parent="." unique_id=20620820]
+offset_left = -48.0
+offset_top = -64.0
+offset_right = 55.0
+offset_bottom = 673.0
 
-[node name="rightButton" type="Button" parent="." unique_id=1569287986]
-offset_left = 1067.0
-offset_top = 297.0
-offset_right = 1075.0
-offset_bottom = 305.0
-text = "Right"
+[node name="rightButton" type="TextureButton" parent="." unique_id=951048397]
+offset_left = 1072.0
+offset_top = -35.0
+offset_right = 1168.0
+offset_bottom = 661.0
 
-[node name="youButton" type="Button" parent="." unique_id=799534096]
-offset_left = 905.0
-offset_top = 51.0
-offset_right = 984.0
-offset_bottom = 82.0
-text = "you"
+[node name="youButton" type="TextureButton" parent="." unique_id=424942945]
+offset_left = 978.0
+offset_top = 24.0
+offset_right = 1115.0
+offset_bottom = 160.0
 
-[node name="windowButton" type="Button" parent="." unique_id=193253582]
-offset_left = 498.0
-offset_top = 190.0
-offset_right = 547.0
-offset_bottom = 221.0
-text = "Window"
+[node name="windowButton" type="TextureButton" parent="." unique_id=454016864]
+offset_left = 356.0
+offset_top = 62.0
+offset_right = 635.0
+offset_bottom = 245.0
 
-[node name="windowButton2" type="Button" parent="." unique_id=378313491]
-offset_left = 221.0
-offset_top = 196.0
-offset_right = 292.0
-offset_bottom = 227.0
-text = "Window"
+[node name="windowButton2" type="TextureButton" parent="." unique_id=255738937]
+offset_left = 36.0
+offset_top = 61.0
+offset_right = 313.0
+offset_bottom = 245.0
 
-[node name="trashButton" type="Button" parent="." unique_id=2102442477]
-offset_left = 900.0
-offset_top = 521.0
-offset_right = 952.0
-offset_bottom = 552.0
-text = "Trash"
+[node name="trashButton" type="TextureButton" parent="." unique_id=1397550798]
+offset_left = 889.0
+offset_top = 459.0
+offset_right = 1079.0
+offset_bottom = 637.0
 
 [connection signal="pressed" from="toolsButton" to="." method="_on_toolsButton_pressed"]
 [connection signal="pressed" from="baitButton" to="." method="_on_baitButton_pressed"]

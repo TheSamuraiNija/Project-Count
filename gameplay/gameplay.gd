@@ -100,10 +100,18 @@ var survival_score := 0
 func _ready():
 	bigcounter_timer = BIGCOUNTER_TIME
 	load_room(current_room)
+	$Sfx/ambiant1.play()
 
+	
 # ---------------------------------------------------------
 # ROOM SYSTEM
 # ---------------------------------------------------------
+
+func play_ambient(room_name: String):
+	$Sfx/ambiant4.stop()
+
+	if room_name == "outside":
+		$Sfx/ambiant4.play()
 
 func load_room(room_name: String):
 	current_room = room_name
@@ -114,6 +122,7 @@ func load_room(room_name: String):
 	var instance: Node = scene.instantiate()
 	instance.gameplay = self
 	room_container.add_child(instance)
+	play_ambient(room_name)
 	update_ui()
 
 # ---------------------------------------------------------
