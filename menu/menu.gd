@@ -11,5 +11,4 @@ func _on_creditsButton_pressed():
 
 
 func _on_howtobutton_pressed() -> void:
-	$Howtoplay.hide()
-	$howtobutton.hide()
+		get_tree().change_scene_to_file("res://howtoplay.tscn")

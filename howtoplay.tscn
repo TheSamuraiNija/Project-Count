@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://e4ki86y4mdfy"]
+
+[ext_resource type="Script" uid="uid://bldr264xt1fx6" path="res://howtoplay.gd" id="1_0e3kn"]
+[ext_resource type="Texture2D" uid="uid://cmetdaqniw112" path="res://art/outside.png" id="2_6lbla"]
+[ext_resource type="Texture2D" uid="uid://rajxrcyq8bun" path="res://art/howtoplay.png" id="3_tujdb"]
+
+[node name="howtoplay" type="Node2D" unique_id=878086118]
+script = ExtResource("1_0e3kn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1247845762]
+position = Vector2(580.50006, 326)
+scale = Vector2(0.645, 0.54499996)
+texture = ExtResource("2_6lbla")
+
+[node name="Howtoplay" type="Sprite2D" parent="." unique_id=1539430834]
+position = Vector2(577, 370)
+scale = Vector2(0.5281818, 0.46042)
+texture = ExtResource("3_tujdb")
+
+[node name="howtobutton" type="TextureButton" parent="." unique_id=696744813]
+offset_right = 1171.0
+offset_bottom = 673.0
+
+[node name="backButton" type="Button" parent="." unique_id=69857252]
+offset_left = 36.0
+offset_top = 28.0
+offset_right = 244.0
+offset_bottom = 99.0
+text = "Back"
+
+[connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]
