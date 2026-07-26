@@ -99,6 +99,7 @@ offset_bottom = 269.0
 text = "cooktest"
 
 [node name="craftingReadyLabel" type="Label" parent="ui/statsPanel" unique_id=1663531399]
+visible = false
 layout_mode = 0
 offset_left = 632.0
 offset_top = 322.0
